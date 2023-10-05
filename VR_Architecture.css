@@ -1,0 +1,109 @@
+.bar{
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 99;
+}
+.bar a{
+    float: left;
+    font-size: 16px;
+    color: rgb(8, 8, 8);
+    text-align: center;
+    padding: 13px 15px;
+    text-decoration: none;
+}
+.bar a:hover{
+    background-color: #ddd;
+    color: black;
+}
+.empty{
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    top: 0;
+}
+.empty a{
+    float: left;
+    font-size: 16px;
+    color: rgb(8, 8, 8);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.empty a:hover{
+    background-color: #ddd;
+    color: black;
+}
+.part1{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-image: url(figures/starry-sky-2675322_1280.jpg);
+    background-size: 120% 120%;
+	background-repeat: no-repeat;
+	/*background-position: center center;*/
+	background-position: 50% 50%;
+}
+.part2{
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    color: #ffffff;
+    text-indent: 10%;
+    font-size:15px
+}
+.part2>a{
+    color: #bbefff;
+    padding-top: 20px;
+    display: block;
+}
+.part3{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    text-align: center;
+}
+.part4{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    font-size:30px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.slideshow-container { 
+    position: relative; 
+    max-width: 700px; 
+    margin: 0 auto; 
+} 
+.mySlides { 
+    display: none; 
+} 
+.mySlides img { 
+    width: 100%; 
+    height: auto; 
+} 
+.prev, .next { 
+    cursor: pointer; 
+    position: absolute; 
+    top: 50%; 
+    width: auto; 
+    padding: 16px; 
+    margin-top: -22px; 
+    color: rgb(0, 0, 0); 
+    font-weight: bold; 
+    font-size: 18px; 
+    transition: 0.6s ease; 
+    user-select: none; 
+} 
+.next { 
+    right: 0; 
+} 
+.prev:hover, .next:hover {
+    background-color: rgba(67, 67, 67, 0.8); 
+} 

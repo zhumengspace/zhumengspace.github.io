@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>筑梦空间</title>
+    <link rel="stylesheet" href="VR_Architecture.css">
+    <link rel="icon" type="image/x-icon" href="figures/logo.jpg"/>
+</head>
+<body>
+    <div class = "bar">
+        <a href="#introduction">项目简介</a>
+        <a href="#vedio">使用教程与安装包下载</a>
+        <a href="#peizhi">配置要求</a>
+        <a href="#furnished">相关设备与软件</a>
+        <a href="#example">示例展示</a>
+        <a href="#aboutus">关于我们</a>
+        <!-- 筑梦空间（这边用logo）      项目简介 教程 设备 案例展示 关于我们-->
+        <!-- 然后导航栏需要做几个超链接链接到各个part -->
+    </div>
+    <div class="empty">
+        <a href="#introduction">项目简介</a>
+        <a href="#vedio">使用教程与安装包下载</a>
+        <a href="#peizhi">配置要求</a>
+        <a href="#aboutus">关于我们</a>
+        <a href="#example">示例展示</a>
+        <a href="#aboutus">关于我们</a>
+    </div>
+    <img src="figures/fengmian2.png" alt="" width="100%" height="80%">
+    <div class="part1" id="introduction"><img src="figures/项目简介.jpg" alt="" height="85%" width="60%"></div>
+    <div class="part2" id="vedio">
+        使用教程与安装包下载
+        <a href="https://pan.baidu.com/s/1tghj6crQXllKJr2Ghhik1w ">筑梦空间——示例文件安装包：https://pan.baidu.com/s/1tghj6crQXllKJr2Ghhik1w</a>
+        <a href="https://pan.baidu.com/s/1ueYTqVBcscrV0dkiupcOFQ ">使用教程：https://pan.baidu.com/s/1ueYTqVBcscrV0dkiupcOFQ</a>
+    </div>
+    <div id="peizhi" style="text-align: center;">
+        <img src="figures/配置要求.jpg" alt="" width="80%" style="display: inline-block; vertical-align: middle;">
+    </div>
+    <div class="part3" id="furnished">
+        <img src="figures/软硬件.png" alt="" width="80%">
+    </div>
+    <div class="part4" id="example">
+        示例展示
+        <div class="slideshow-container"> 
+            <div class="mySlides"> 
+                <img src="figures/微信图片_20230605233205.png" alt="Image 1">
+            </div> 
+            <div class="mySlides"> 
+                <img src="figures/微信图片_20230605233158.png" alt="Image 2">
+            </div> 
+            <div class="mySlides"> 
+                <img src="figures/微信图片_20230605233202.png" alt="Image 3">
+            </div> 
+            <div class="mySlides"> 
+                <img src="figures/微信图片_20230605233152.png" alt="Image 4">
+            </div> 
+            <div class="mySlides"> 
+                <img src="figures/微信图片_20230605233154.png" alt="Image 5">
+            </div>
+            <!-- <a class="prev" onclick="plusSlides(-1)"><<</a > -->
+            <a class="next" onclick="plusSlides(1)">>></a > 
+            </div> 
+    </div>
+    <div class="part1" id="aboutus"><img src="figures/关于我们.jpg" alt="" height="85%" width="80%"></div>
+    <script> 
+        let slideIndex = 1; 
+        showSlides(slideIndex); 
+        function plusSlides(n) { 
+            showSlides(slideIndex += n); 
+        } 
+        function showSlides(n) {
+            let i; 
+            const slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {
+                slideIndex = 1; 
+            } 
+            if (n < 1) { 
+                slideIndex = slides.length; 
+            } 
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none"; 
+            } 
+            slides[slideIndex - 1].style.display = "block"; 
+        } 
+    </script> 
+</body>
+</html>
